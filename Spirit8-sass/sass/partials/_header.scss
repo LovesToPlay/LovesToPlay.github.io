@@ -1,0 +1,58 @@
+header {
+	@include block;
+	background-color: #0b0b0b;
+	height: 96px;
+		.logo{
+				float: left;
+				overflow: hidden;
+				width: 86px;
+				height: 18px;
+				margin: 40px 0 0 40px;
+					a{
+						width: 100%;
+						display: block;
+						overflow: hidden;
+						height: 100%;
+							img{
+								display: block;
+								overflow: hidden;
+								width: 100%;
+								height: 100%;
+							}
+					}
+					h1{
+				  	display: block;
+				  	overflow: visible;
+				  	text-indent: -9999px;
+					}
+		}
+	nav{
+			@include block;
+			width: 53%;
+			float: right;
+			margin: 30px 0 0 0;
+				ul{
+					text-align: center;
+					color: #fff;
+					display: block;
+					overflow: hidden;
+					width: 100%;
+						li{
+							float: left;
+							display: inline-block;
+							margin: 0 30px 0 0;
+								a{
+								 color: #ffffff;
+								 font-size: 16px;
+								 font-family: "Arial", sans-serif;
+								 font-family: "Open Sans", sans-serif;
+								 font-weight: 600;
+								 line-height: 40px;
+								 display: block;
+								 overflow: hidden;
+								 text-transform: uppercase;
+								}
+						}
+				}
+			}
+}

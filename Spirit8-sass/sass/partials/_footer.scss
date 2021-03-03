@@ -1,0 +1,26 @@
+footer {
+	.conteiner{
+		@include block;
+		height: 90px;
+		background-color: #0b0b0b;
+		.left{
+			float: left;
+			p{
+				font-family: 'Open Sans',sans-serif;
+				color: #b2b2b2;
+				margin: 42px 0 0 170px;
+			}
+		}
+		.right{
+		  float: right;
+		  margin: 33px 160px 0 0;
+			ul{
+				display: block;
+				li {
+					display: inline-block;
+					margin-left: 15px;
+				}
+			}
+		}
+	}
+}

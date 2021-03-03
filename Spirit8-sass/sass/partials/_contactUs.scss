@@ -1,0 +1,103 @@
+.contactUs {
+	@include block;
+	height: 830px;
+	.title-text{
+		display: block;
+		overflow: hidden;
+		margin: 100px 0 50px 0;
+			h3{
+				@include heading2;
+				margin: 10px 0 10px 0;
+				span{
+					display: inline-block;
+					overflow: visible;
+					font-family: 'Open Sans',sans-serif;
+					font-weight: 700;
+					text-transform: uppercase;
+				}
+			}
+			h3::before{
+				@include before;
+				top: 50px;
+			}
+			h3::after{
+				@include aft;
+				top: 63px;
+			}
+	}
+	em{
+	  display: block;
+	  overflow: hidden;
+	  width: 590px;
+	  margin: 50px auto 50px auto;
+	  font-family: 'Open Sans',sans-serif;
+	  font-size: 85%;
+	  text-align: center;
+	  color: #5a5a5a;
+	}
+	form{
+	  display: block;
+	  overflow: hidden;
+	}
+	.a{
+	  display: block;
+	  overflow: hidden;
+	  width: 800px;
+	  margin: 50px auto 50px auto;
+		.halfrow1{
+			float: left;
+			width: 400px;
+			label{
+				font-family: 'Open Sans',sans-serif;
+				color: #5a5a5a;
+				margin-bottom: 10px;
+			}
+			#name {
+				width: 360px;
+				height: 40px;
+			}
+		}
+		.halfrow2{
+		  float: right;
+		  width: 400px;
+			label{
+				font-family: 'Open Sans',sans-serif;
+				color: #5a5a5a;
+				margin-bottom: 10px;
+			}
+			#e-mail {
+				width: 360px;
+				height: 40px;
+			}
+		}
+		.row{
+		  float: left;
+		  margin: 32px 0 0 0;
+			label{
+				font-family: 'Open Sans',sans-serif;
+				color: #5a5a5a;
+				margin-bottom: 10px;
+			}
+			textarea {
+			  width: 765px;
+			  height: 163px;
+			  resize: none;
+			}
+			button{
+			  display: block;
+			  overflow: hidden;
+			  width: 165px ;
+			  height: 40px;
+			  background-color: #fcac45;
+			  color: #fff;
+			  outline: inherit;
+			  position: absolute;
+			  bottom: -5%;
+			  right: 18%;
+			  border: none;
+			}
+		}
+	}
+
+
+}

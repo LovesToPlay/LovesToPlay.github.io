@@ -1,0 +1,1276 @@
+@charset "UTF-8";
+/* SCSS Compiled */
+/***************************************************              GENERAL RESET STYLES             ***************************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input, textarea, select {
+  vertical-align: middle;
+  color: #000;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+input::-webkit-input-placeholder {
+  color: #ebedec;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #ebedec;
+}
+
+/*@media*/
+/* @media (min-width: 1921px){} 													QHD \ UHD
+@media (min-width: 1600px) and (max-width: 1919px) {}	HD +
+@media (min-width: 1440px) and (max-width: 1599px) {}	macbook
+@media (min-width: 1360px) and (max-width: 1439px) {}	HD
+@media (min-width: 1280px) and (max-width: 1359px) {} IPAD2
+@media (min-width: 1024px) and (max-width: 1279px) {} IPAD
+@media (min-width: 896px) and (max-width: 1023px) {}	Ip Xs max horizontal
+@media (min-width: 812px) and (max-width: 895px) {}		Ip Xs horizontal
+@media (min-width: 768px) and (max-width: 811px) {}		Tablet
+@media (min-width: 736px) and (max-width: 767px) {}		Ip 6,7,8 Plus horizontal
+@media (min-width: 667px) and (max-width: 735px) {}		Ip 6,7,8 horizontal
+@media (min-width: 568px) and (max-width: 666px) {}		Ip 5 horizontal
+@media (min-width: 480px) and (max-width: 567px) {}		Ip 4 horizontal
+@media (min-width: 414px) and (max-width: 479px) {}		Ip 6,7,8
+@media (min-width: 320px) and (max-width: 413px) {}		Ip 4,5 */
+/*@media end*/
+/*usage  @include font-size(13);*/
+/* Brand Colors ------------------------------------------------*/
+/* wrapper */
+#wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.layout {
+  margin: 0 auto;
+  position: relative;
+  width: 1180px;
+}
+
+main {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+#content {
+  position: relative;
+}
+
+#sidebar {
+  position: relative;
+}
+
+aside {
+  position: relative;
+}
+
+header {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #0b0b0b;
+  height: 96px;
+}
+header .logo {
+  float: left;
+  overflow: hidden;
+  width: 86px;
+  height: 18px;
+  margin: 40px 0 0 40px;
+}
+header .logo a {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+}
+header .logo a img {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+header .logo h1 {
+  display: block;
+  overflow: visible;
+  text-indent: -9999px;
+}
+header nav {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 53%;
+  float: right;
+  margin: 30px 0 0 0;
+}
+header nav ul {
+  text-align: center;
+  color: #fff;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+header nav ul li {
+  float: left;
+  display: inline-block;
+  margin: 0 30px 0 0;
+}
+header nav ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  line-height: 40px;
+  display: block;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.welсome {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  height: 600px;
+  background-color: #0b0b0b;
+}
+.welсome h3 {
+  display: block;
+  overflow: visible;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  color: #999999;
+  font-size: 35px;
+  padding-top: 170px;
+}
+.welсome h3 span {
+  color: #fcac45;
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+.welсome p {
+  color: #999999;
+  display: inline-block;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 0 0 200px;
+}
+.welсome p span {
+  color: #999999;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.welсome a {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  bottom: -275px;
+  left: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.welсome a img {
+  display: block;
+  overflow: hidden;
+}
+
+.aboutUs {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 615px;
+}
+.aboutUs .conteiner {
+  padding: 60px 0 0 0;
+}
+.aboutUs .conteiner .left {
+  float: left;
+}
+.aboutUs .conteiner .right {
+  width: 462px;
+  float: right;
+}
+.aboutUs .conteiner .right .first {
+  overflow: hidden;
+  color: #999999;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+.aboutUs .conteiner .right h3 {
+  display: block;
+  overflow: visible;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  padding-right: 166px;
+}
+.aboutUs .conteiner .right h3 span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: 0;
+  text-transform: uppercase;
+}
+.aboutUs .conteiner .right h3::after {
+  content: "";
+  position: absolute;
+  width: 99px;
+  height: 5px;
+  left: 50%;
+  margin-left: -34px;
+  width: 68px;
+  height: 5px;
+  background-color: #fcac45;
+  display: block;
+  overflow: visible;
+  bottom: -15px;
+  height: 3px;
+  left: 10%;
+  margin-left: -50px;
+}
+.aboutUs .conteiner .right p {
+  display: block;
+  overflow: visible;
+  font-family: "Open Sans", sans-serif;
+  color: #5a5a5a;
+  margin: 40px 0 0 0;
+}
+.aboutUs .conteiner .right ul {
+  display: block;
+  overflow: hidden;
+  margin: 50px 0 0 0;
+}
+.aboutUs .conteiner .right ul li {
+  display: block;
+  overflow: hidden;
+  width: 480px;
+  margin: 0 0 10px 0;
+}
+.aboutUs .conteiner .right ul li .fa {
+  width: 480px;
+  height: 15px;
+  margin: 0 10px 0 0;
+}
+.aboutUs .conteiner .right ul li .fa img {
+  display: block;
+  float: left;
+}
+.aboutUs .conteiner .right ul li .fa h4 {
+  display: block;
+  overflow: visible;
+  float: left;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 10px 0 10px;
+  color: #5a5a5a;
+}
+.aboutUs .conteiner .right ul li .fa em {
+  display: block;
+  overflow: visible;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #5a5a5a;
+  float: left;
+}
+.aboutUs .conteiner .right .more {
+  color: #616161;
+  font-size: 14px;
+  font-weight: bold;
+  background-image: url(../images/img-briefcase-forma1.png);
+  background-repeat: no-repeat;
+  background-position: 10% 57%;
+  border: 1px solid #616161;
+  display: block;
+  overflow: hidden;
+  width: 150px;
+  height: 25px;
+  margin: 55px 0 0 0;
+  padding: 20px 10px 10px 38px;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+
+.ourTeam {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 727px;
+  position: relative;
+  background-color: #0b0b0b;
+}
+.ourTeam .slide {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 727px;
+}
+.ourTeam .slide .section-title {
+  display: block;
+  overflow: visible;
+  text-align: center;
+  padding: 55px 0;
+  margin: 60px auto;
+}
+.ourTeam .slide .section-title h2 {
+  height: auto;
+  display: block;
+  overflow: visible;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  font-size: 35px;
+  color: #ffffff;
+  position: relative;
+}
+.ourTeam .slide .section-title h2 strong {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+.ourTeam .slide .section-title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  width: 99px;
+  height: 5px;
+  background-color: #fcac45;
+  display: block;
+  overflow: visible;
+  bottom: -15px;
+}
+.ourTeam .slide .section-title h2::after {
+  content: "";
+  position: absolute;
+  width: 99px;
+  height: 5px;
+  left: 50%;
+  margin-left: -34px;
+  width: 68px;
+  height: 5px;
+  background-color: #fcac45;
+  display: block;
+  overflow: visible;
+  bottom: -28px;
+}
+.ourTeam .slide .team_slide {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.ourTeam .slide .team_slide li {
+  float: left;
+}
+.ourTeam .slide .team_slide li img {
+  display: block;
+  overflow: hidden;
+  width: 55px;
+  height: 55px;
+  margin: 0 0 0 70px;
+  padding: 25px 25px;
+  border: 5px solid;
+  border-radius: 50%;
+  border-color: #ffffff;
+}
+.ourTeam .slide .team_slide li .caption {
+  display: block;
+  overflow: hidden;
+  width: 229px;
+  height: 149px;
+}
+.ourTeam .slide .team_slide li .caption h3 {
+  margin: 40px 0 10px 0;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+}
+.ourTeam .slide .team_slide li .caption p {
+  display: block;
+  overflow: visible;
+  color: #F2F2F2;
+  margin: 0 0 30px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.ourWork {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.ourWork .section-title {
+  display: block;
+  overflow: visible;
+  text-align: center;
+  margin: 100px auto;
+  height: 118px;
+}
+.ourWork .section-title h2 {
+  height: auto;
+  display: block;
+  overflow: visible;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  font-size: 35px;
+  color: #5a5a5a;
+  font-weight: 300;
+}
+.ourWork .section-title h2 strong {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.ourWork .section-title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  width: 99px;
+  height: 5px;
+  background-color: #fcac45;
+  display: block;
+  overflow: visible;
+  top: 50px;
+}
+.ourWork .section-title h2::after {
+  content: "";
+  position: absolute;
+  width: 99px;
+  height: 5px;
+  left: 50%;
+  margin-left: -34px;
+  width: 68px;
+  height: 5px;
+  background-color: #fcac45;
+  display: block;
+  overflow: visible;
+  top: 63px;
+}
+.ourWork .section-title em {
+  display: block;
+  overflow: visible;
+  font-family: "Open Sans", sans-serif;
+  font-size: 85%;
+  text-align: center;
+  color: #5a5a5a;
+  width: 907px;
+  margin: 50px auto 0 auto;
+}
+.ourWork .categories {
+  display: block;
+  overflow: hidden;
+  padding: 10px 0;
+  color: #5a5a5a;
+  font-size: 14px;
+}
+.ourWork .categories ul {
+  display: block;
+  overflow: hidden;
+  margin: 0 0 10px 0;
+}
+.ourWork .categories ul .p-left {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  float: left;
+}
+.ourWork .categories ul .p-left h4 {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin: 10px 0 10px 0;
+}
+.ourWork .categories ul .p-right {
+  display: inline-block;
+  overflow: visible;
+  float: right;
+}
+.ourWork .categories ul .p-right .type {
+  float: right;
+  font-size: 14px;
+}
+.ourWork .categories ul .p-right .type li {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  border-right: 1px solid;
+}
+.ourWork .categories ul .p-right .type li a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #5a5a5a;
+  padding: 0 10px 0 0;
+}
+.ourWork .categories ul .p-right .type li a:hover {
+  color: #000;
+}
+.ourWork .categories ul .p-right .type li:last-child {
+  border: none;
+}
+.ourWork .catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.ourWork .catalog li {
+  margin-bottom: 30px;
+  width: 263px;
+  height: 237px;
+}
+.ourWork .catalog li .holder {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.ourWork .catalog li .holder img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.ourWork .catalog li .hover {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+.ourWork .catalog li:hover .hover {
+  display: block;
+}
+.ourWork .catalog li:hover .holder {
+  display: none;
+}
+.ourWork .catalog li:last-child {
+  margin-bottom: 100px;
+}
+
+.ourServices {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 635px;
+}
+.ourServices .section-title {
+  display: block;
+  overflow: visible;
+  text-align: center;
+  padding: 15px 0;
+  margin: 80px 0 0 0;
+}
+.ourServices .section-title h2 {
+  height: auto;
+  display: block;
+  overflow: visible;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  font-size: 35px;
+  font-weight: 300;
+  font-size: 30px;
+  position: relative;
+}
+.ourServices .section-title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  width: 99px;
+  height: 5px;
+  background-color: #fcac45;
+  display: block;
+  overflow: visible;
+  bottom: -18px;
+}
+.ourServices .section-title h2::after {
+  content: "";
+  position: absolute;
+  width: 99px;
+  height: 5px;
+  left: 50%;
+  margin-left: -34px;
+  width: 68px;
+  height: 5px;
+  background-color: #fcac45;
+  display: block;
+  overflow: visible;
+  top: 56px;
+}
+.ourServices .section-title strong {
+  font-family: "Open Sans", sans-serif;
+  overflow: visible;
+}
+.ourServices em {
+  display: block;
+  overflow: visible;
+  font-family: "Open Sans", sans-serif;
+  font-size: 85%;
+  text-align: center;
+  color: #5a5a5a;
+  width: 907px;
+  margin: 50px auto 0 auto;
+}
+.ourServices ul {
+  display: block;
+  overflow: hidden;
+  margin: 100px 0 0 0;
+}
+.ourServices ul li {
+  display: block;
+  overflow: hidden;
+  width: 265px;
+  height: 240px;
+  float: left;
+}
+.ourServices ul li .holder {
+  display: block;
+  overflow: visible;
+  width: 40%;
+  height: 100px;
+  border: 5px solid;
+  border-radius: 50%;
+  border-color: #fcac45;
+  margin-left: 95px;
+}
+.ourServices ul li .holder img {
+  width: 55px;
+  height: 55px;
+  padding: 25px 25px;
+}
+.ourServices ul li h4 {
+  display: block;
+  overflow: visible;
+  margin: 30px 0 10px 20px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.ourServices ul li p {
+  display: block;
+  overflow: hidden;
+  margin: 0 0 0 10px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.ourClients {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 566px;
+  background-color: #0b0b0b;
+}
+.ourClients .slide {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 426px;
+}
+.ourClients .slide .section-title {
+  display: block;
+  overflow: visible;
+  text-align: center;
+  margin: 100px auto 50px auto;
+}
+.ourClients .slide .section-title h2 {
+  height: auto;
+  display: block;
+  overflow: visible;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  font-size: 35px;
+  color: #ffffff;
+}
+.ourClients .slide .section-title h2 strong {
+  font-family: "Open Sans", sans-serif;
+  overflow: visible;
+}
+.ourClients .slide .section-title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  width: 99px;
+  height: 5px;
+  background-color: #fcac45;
+  display: block;
+  overflow: visible;
+  bottom: 277px;
+}
+.ourClients .slide .section-title h2::after {
+  content: "";
+  position: absolute;
+  width: 99px;
+  height: 5px;
+  left: 50%;
+  margin-left: -34px;
+  width: 68px;
+  height: 5px;
+  background-color: #fcac45;
+  display: block;
+  overflow: visible;
+  bottom: 260px;
+}
+.ourClients .slide ul {
+  display: block;
+  overflow: hidden;
+  margin: 90px auto;
+}
+.ourClients .slide ul li {
+  display: block;
+  overflow: hidden;
+  width: 228px;
+  height: 121px;
+  float: left;
+}
+.ourClients .slide ul li .item {
+  display: block;
+  overflow: hidden;
+  width: 158px;
+  height: 50px;
+  margin: 35px;
+}
+.ourClients .slide ul li .item img {
+  display: block;
+  overflow: hidden;
+}
+.ourClients .slide .pages {
+  width: 60px;
+  height: 9px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -170px;
+}
+.ourClients .slide .pages li {
+  width: 9px;
+  height: 9px;
+  margin: 0 12px 0 0;
+  float: left;
+  background-color: #ffffff;
+}
+.ourClients .slide .pages li.active {
+  background-color: #fcac45;
+}
+
+.testimonials {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #0b0b0b;
+  height: 600px;
+}
+.testimonials .section-title {
+  display: block;
+  overflow: hidden;
+  padding: 30px 0;
+  margin: 100px 0 100px 0;
+}
+.testimonials .section-title h2 {
+  height: auto;
+  display: block;
+  overflow: visible;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+}
+.testimonials .section-title h2 strong {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+.testimonials .section-title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  width: 99px;
+  height: 5px;
+  background-color: #fcac45;
+  display: block;
+  overflow: visible;
+  bottom: 197px;
+}
+.testimonials .section-title h2::after {
+  content: "";
+  position: absolute;
+  width: 99px;
+  height: 5px;
+  left: 50%;
+  margin-left: -34px;
+  width: 68px;
+  height: 5px;
+  background-color: #fcac45;
+  display: block;
+  overflow: visible;
+  bottom: 184px;
+}
+.testimonials .testim-text h5 {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+.testimonials .testim-text p {
+  display: block;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 30px 0;
+  color: #d1d1d1;
+}
+.testimonials .pages {
+  width: 60px;
+  height: 9px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -150px;
+}
+.testimonials .pages li {
+  width: 9px;
+  height: 9px;
+  margin: 0 12px 0 0;
+  float: left;
+  background-color: #ffffff;
+}
+.testimonials .pages li.active {
+  background-color: #fcac45;
+}
+
+.contactUs {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 830px;
+}
+.contactUs .title-text {
+  display: block;
+  overflow: hidden;
+  margin: 100px 0 50px 0;
+}
+.contactUs .title-text h3 {
+  height: auto;
+  display: block;
+  overflow: visible;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  font-size: 35px;
+  margin: 10px 0 10px 0;
+}
+.contactUs .title-text h3 span {
+  display: inline-block;
+  overflow: visible;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.contactUs .title-text h3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  width: 99px;
+  height: 5px;
+  background-color: #fcac45;
+  display: block;
+  overflow: visible;
+  top: 50px;
+}
+.contactUs .title-text h3::after {
+  content: "";
+  position: absolute;
+  width: 99px;
+  height: 5px;
+  left: 50%;
+  margin-left: -34px;
+  width: 68px;
+  height: 5px;
+  background-color: #fcac45;
+  display: block;
+  overflow: visible;
+  top: 63px;
+}
+.contactUs em {
+  display: block;
+  overflow: hidden;
+  width: 590px;
+  margin: 50px auto 50px auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 85%;
+  text-align: center;
+  color: #5a5a5a;
+}
+.contactUs form {
+  display: block;
+  overflow: hidden;
+}
+.contactUs .a {
+  display: block;
+  overflow: hidden;
+  width: 800px;
+  margin: 50px auto 50px auto;
+}
+.contactUs .a .halfrow1 {
+  float: left;
+  width: 400px;
+}
+.contactUs .a .halfrow1 label {
+  font-family: "Open Sans", sans-serif;
+  color: #5a5a5a;
+  margin-bottom: 10px;
+}
+.contactUs .a .halfrow1 #name {
+  width: 360px;
+  height: 40px;
+}
+.contactUs .a .halfrow2 {
+  float: right;
+  width: 400px;
+}
+.contactUs .a .halfrow2 label {
+  font-family: "Open Sans", sans-serif;
+  color: #5a5a5a;
+  margin-bottom: 10px;
+}
+.contactUs .a .halfrow2 #e-mail {
+  width: 360px;
+  height: 40px;
+}
+.contactUs .a .row {
+  float: left;
+  margin: 32px 0 0 0;
+}
+.contactUs .a .row label {
+  font-family: "Open Sans", sans-serif;
+  color: #5a5a5a;
+  margin-bottom: 10px;
+}
+.contactUs .a .row textarea {
+  width: 765px;
+  height: 163px;
+  resize: none;
+}
+.contactUs .a .row button {
+  display: block;
+  overflow: hidden;
+  width: 165px;
+  height: 40px;
+  background-color: #fcac45;
+  color: #fff;
+  outline: inherit;
+  position: absolute;
+  bottom: -5%;
+  right: 18%;
+  border: none;
+}
+
+footer .conteiner {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 90px;
+  background-color: #0b0b0b;
+}
+footer .conteiner .left {
+  float: left;
+}
+footer .conteiner .left p {
+  font-family: "Open Sans", sans-serif;
+  color: #b2b2b2;
+  margin: 42px 0 0 170px;
+}
+footer .conteiner .right {
+  float: right;
+  margin: 33px 160px 0 0;
+}
+footer .conteiner .right ul {
+  display: block;
+}
+footer .conteiner .right ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.team_slide {
+  width: 100%;
+  position: relative;
+}
+.team_slide .slick-prev {
+  display: none;
+  background-color: inherit;
+  text-indent: -9999px;
+  border: none;
+}
+.team_slide .slick-next {
+  display: none;
+  text-indent: -9999px;
+  background-color: inherit;
+  border: none;
+}
+.team_slide ul.slick-dots {
+  width: 60px;
+  height: 9px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -9px;
+  height: 19px;
+}
+.team_slide ul.slick-dots li {
+  width: 9px;
+  height: 9px;
+  margin: 0 12px 0 0;
+  float: left;
+  background-color: #ffffff;
+}
+.team_slide ul.slick-dots li.slick-active {
+  background-color: #fcac45;
+}
+.team_slide button {
+  display: none;
+}

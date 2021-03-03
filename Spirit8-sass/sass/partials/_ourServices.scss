@@ -1,0 +1,79 @@
+.ourServices {
+	@include block;
+	height: 635px;
+		.section-title{
+			@include title;
+			padding: 15px 0;
+			margin: 80px 0 0 0;
+				h2{
+					@include heading2;
+					font-weight: 300;
+					font-size: 30px;
+				  position: relative;
+				}
+				h2::before{
+					@include before;
+					bottom: -18px;
+				}
+				h2::after{
+					@include aft;
+					top: 56px;
+				}
+				strong{
+				  font-family: 'Open Sans',sans-serif;
+				  overflow: visible;
+				}
+		}
+		em{
+		  display: block;
+		  overflow: visible;
+		  font-family: 'Open Sans',sans-serif;
+		  font-size: 85%;
+		  text-align: center;
+		  color: #5a5a5a;
+		  width: 907px;
+		  margin: 50px auto 0 auto;
+		}
+		ul{
+		  display: block;
+		  overflow: hidden;
+		  margin: 100px 0 0 0;
+			li{
+				display: block;
+				overflow: hidden;
+				width: 265px;
+				height: 240px;
+				float: left;
+				.holder{
+					display: block;
+					overflow: visible;
+					width: 40%;
+					height: 100px;
+					border: 5px solid;
+					border-radius: 50%;
+					border-color: #fcac45;
+					margin-left: 95px;
+					img{
+						width: 55px;
+						height: 55px;
+						padding: 25px 25px;
+					}
+				}
+				h4{
+				  display: block;
+				  overflow: visible;
+				  margin: 30px 0 10px 20px;
+				  font-family: 'Open Sans',sans-serif;
+				  text-transform: uppercase;
+				  text-align: center;
+				}
+				p{
+				  display: block;
+				  overflow: hidden;
+				  margin: 0 0 0 10px;
+				  font-family: 'Open Sans',sans-serif;
+				  text-align: center;
+				}
+			}
+		}
+}

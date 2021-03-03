@@ -1,0 +1,63 @@
+.testimonials {
+	@include block;
+	background-color: #0b0b0b;
+  height: 600px;
+	.section-title{
+		display: block;
+		overflow: hidden;
+		padding: 30px 0;
+		margin: 100px 0 100px 0;
+			h2{
+				@include heading2;
+				line-height: 20px;
+			  font-family: 'Open Sans',sans-serif;
+				color: #ffffff;
+				strong{
+					font-family: 'Open Sans',sans-serif;
+					font-weight: 700;
+				}
+			}
+			h2::before{
+				@include before;
+				bottom: 197px;
+			}
+			h2::after{
+				@include aft;
+				bottom: 184px;
+			}
+	}
+	.testim-text {
+		h5{
+		  text-transform: uppercase;
+		  font-family: 'Open Sans',sans-serif;
+		  font-weight: 700;
+		  line-height: 20px;
+		  color: #ffffff;
+		  font-size: 14px;
+		  margin: 10px 0 10px 0;
+		  text-align: center;
+		}
+		p {
+		  display: block;
+		  text-align: center;
+		  font-family: 'Open Sans',sans-serif;
+		  font-weight: 400;
+		  margin: 30px 0;
+		  color: #d1d1d1;
+		}
+	}
+	.pages{
+		@include pages;
+		bottom: -150px;
+		li{
+			width: 9px;
+			height: 9px;
+			margin: 0 12px 0 0;
+			float: left;
+			background-color: #ffffff;
+		}
+		li.active{
+		  background-color: #fcac45;
+		}
+	}
+}

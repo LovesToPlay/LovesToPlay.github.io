@@ -1,0 +1,88 @@
+.ourTeam {
+	@include block;
+	height: 727px;
+  position:relative;
+  background-color: #0b0b0b;
+		.slide{
+			@include block;
+			height: 727px;
+			.section-title {
+				@include title;
+				padding: 55px 0;
+				margin: 60px auto;
+					h2{
+						@include heading2;
+						color: #ffffff;
+						position: relative;
+						strong{
+							font-family: 'Open Sans',sans-serif;
+							text-transform: uppercase;
+						}
+					}
+					h2::before{
+						@include before;
+						bottom: -15px;
+					}
+					h2::after{
+						@include aft;
+						bottom: -28px;
+					}
+
+			}
+			.team_slide{
+				@include block;
+					 li{
+					 	// width: 285px;
+					 	// height: 330px;
+					 	float: left;
+					 	img{
+					 		display: block;
+					 		overflow: hidden;
+					 		width: 55px;
+					 		height: 55px;
+					 		margin: 0 0 0 70px;
+					 		padding: 25px 25px;
+					 		border: 5px solid;
+					 		border-radius: 50%;
+					 		border-color: #ffffff;
+					 	}
+					 	.caption{
+					 	  display: block;
+					 	  overflow: hidden;
+					 	  width: 229px;
+					 	  height: 149px;
+					 		h3{
+					 			margin: 40px 0 10px 0;
+					 			text-align: center;
+					 			color: #ffffff;
+					 			font-family: 'Open Sans',sans-serif;
+					 			font-size: 18px;
+					 			font-weight: 900;
+					 		}
+					 		p{
+					 		  display: block;
+					 		  overflow: visible;
+					 		  color: #F2F2F2;
+					 		  margin: 0 0 30px 0;
+					 		  font-family: 'Open Sans',sans-serif;
+					 		  font-size: 14px;
+					 		  text-align: center;
+					 		}
+					 	}
+					 }
+			}
+			 // .pages{
+			 // 	@include pages;
+			 // 	li{
+			 // 		width: 9px;
+			 // 		height: 9px;
+			 // 		margin: 0 12px 0 0;
+			 // 		float: left;
+			 // 		background-color: #ffffff;
+			 // 	}
+			 // 		li.active{
+			 // 		  background-color: #fcac45;
+			 // 		}
+			 // 	}
+		}
+}

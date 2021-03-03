@@ -1,0 +1,34 @@
+.team_slide{
+  width: 100%;
+  position: relative;
+    .slick-prev{
+      display: none;
+      background-color: inherit;
+      text-indent: -9999px;
+      border: none;
+    }
+    .slick-next{
+      display: none;
+      text-indent: -9999px;
+      background-color: inherit;
+      border: none;
+    }
+    ul.slick-dots{
+      @include pages;
+      bottom: -9px;
+      height: 19px;
+        li{
+        width: 9px;
+  			height: 9px;
+  			margin: 0 12px 0 0;
+  			float: left;
+  			background-color: #ffffff;
+        }
+        li.slick-active{
+          background-color: #fcac45;
+        }
+    }
+    button{
+      display: none;
+    }
+}
